@@ -1,0 +1,4 @@
+Situational Awareness (post-exploitation recon)
+whoami /all
+systeminfo |findstr Domain
+net user $env:USERNAME /domain <- my account details
