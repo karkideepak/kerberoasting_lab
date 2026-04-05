@@ -1,0 +1,7 @@
+Key Usage Examples of Netsh:
+View IP Settings: netsh interface ip show config.
+Reset TCP/IP Stack: netsh int ip reset (used to fix network connectivity issues).
+Manage Wi-Fi Profiles: netsh wlan show profiles to list saved networks, or netsh wlan show profile name="NetworkName" key=clear to see Wi-Fi passwords.
+Set Static IP Address: netsh interface ip set address "Local Area Connection" static 192.168.1.10 255.255.255.0 192.168.1.1.
+Reset Winsock Catalog: netsh winsock reset (fixes socket errors).
+Configure Firewall: netsh advfirewall set...
