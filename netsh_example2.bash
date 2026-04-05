@@ -4,3 +4,6 @@ netsh interface portproxy add v4tov4 listenport=8080 connectport=80 connectaddre
 netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=9000 connectaddress=10.0.0.5 connectport=9000
 # Access http://127.0.0.1:9000 -> forwarded 10.0.0.5:9000
 # Only accepts connections from your local machine
+
+netsh interface portproxy delete v4tov4 listenport=8080
+# delete a rule
