@@ -1,0 +1,13 @@
+netsh interface portproxy add v4tov4 listenport=80 connectport=8000 connectaddress=1.1.2.3.4
+
+# What it does
+
+This sets up a port forwarding (proxy) rule on Windows:
+
+Listens on port 80 (HTTP) on your local machine
+Forwards any incoming traffic to:
+IP: 192.1.2.3.4
+Port: 8000
+In plain English
+
+“Anything hitting my computer on port 80 → send it to 192.1.2.3.4:8000.”
